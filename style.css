@@ -1,0 +1,87 @@
+/* login-style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f7f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#loginSection {
+    text-align: center;
+}
+
+#loginSection h1 {
+    color: #8447ff;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 280px;
+    padding: 14px;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid rgba(132, 71, 255, 0.4);
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    outline: none;
+    background: white;
+    transition: 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #555;
+    opacity: 0.7;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #8447ff;
+    box-shadow: 0 0 10px rgba(132, 71, 255, 0.5);
+}
+
+button {
+    width: 300px;
+    padding: 14px;
+    background-color: #8447ff;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #6f30f5;
+}
+
+.output {
+    margin-top: 15px;
+    color: red;
+    font-size: 14px;
+}
+
+/* Optional: Add a background blur or purple shadow effect */
+body::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(132,71,255,0.3) 0%, transparent 80%);
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: blur(60px);
+}
